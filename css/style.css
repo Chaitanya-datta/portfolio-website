@@ -1,0 +1,493 @@
+/* ================= GENERAL BODY ================= */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6e6fa; /* Lavender background */
+}
+
+/* ================= HERO / BANNER ================= */
+.hero {
+    text-align: center;
+    background-color:#C2C2E0;
+}
+
+/* Portfolio Title above banner */
+.portfolio-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #9c27b0;
+    margin: 15px 0 5px 0;
+}
+
+.headline {
+    text-align: center;
+    font-size: 1.5em;
+    color:  #6a1b9a;
+    margin: 0 0 15px 0;
+}
+
+.hero .banner {
+    width: 98%;           /* slightly smaller width than full */
+    max-width: 1200px;    /* optional max width */
+    height: 200px;        /* smaller height than before */
+    object-fit: cover;
+    border-radius: 8px;   /* optional slight rounded corners */
+}
+
+/* ================= NAVIGATION MENU ================= */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #9c27b0;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav a:hover {
+    background-color: #9c27b0;
+    color: white;
+}
+
+/* ================= CONTENT & ASIDE ================= */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.content {
+    flex: 3 1 600px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.sidebar {
+    flex: 1 1 200px;
+    background-color: rgba(230, 230, 250, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.highlight {
+    font-weight: bold;
+    color: #9c27b0;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #9c27b0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .sidebar {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .portfolio-title {
+        font-size: 2em;
+    }
+    .headline {
+        font-size: 1.2em;
+    }
+    .hero .banner {
+        width: 95%;
+        height: 150px;
+    }
+}
+
+
+/* ================= ABOUT PAGE ================= */
+
+/* Main About container – image kept */
+.about-main {
+    padding: 30px;
+    background-image: url('../images/bg-about.png'); /* image unchanged */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+/* Each content section */
+.about-section {
+    background-color: rgba(230, 230, 250, 0.9); /* pastel lavender */
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: auto; /* contain floated images */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Floating images */
+.float-left {
+    float: left;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.float-right {
+    float: right;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Hobby images wrapper */
+.hobby-images {
+    margin-bottom: 15px;
+}
+
+/* Paragraph text */
+.about-section p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* ================= HEADER (Lavender) ================= */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #C2C2E0; /* lavender */
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* ================= FOOTER (Lavender) ================= */
+footer {
+    background-color: #B6B6D8; /* slightly darker lavender */
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 768px) {
+
+    .float-left,
+    .float-right {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+}
+/* ================= CONTACT PAGE ONLY ================= */
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color:  #dbb8fa; /* Light Blue */
+    color: #333333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Page background */
+.contact-main {
+    padding: 40px;
+    background-color: #E6E6FA; /* Lavender */
+}
+
+/* Contact content section */
+.contact-section {
+    background-color: #E6E6FA; /* Lavender */
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    line-height: 1.8;
+    color: #333333;
+}
+
+/* Section heading */
+.contact-section h2 {
+    color: #4b3f72; /* readable lavender heading */
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Layout */
+.contact-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Intro text */
+.contact-intro {
+    flex: 1 1 300px;
+}
+
+/* Cards container */
+.contact-cards {
+    flex: 2 1 600px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+    flex: 1 1 180px;
+    background-color: #E6E6FA; /* Lavender */
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+/* Hover */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card headings */
+.card h3 {
+    color: #4b3f72;
+    margin-bottom: 10px;
+}
+
+/* Card links */
+.card a {
+    color: #4b3f72;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #dbb8fa; /* Light Blue */
+    color: #333333;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-cards {
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+/* ================= PROJECTS PAGE ================= */
+.projects-main {
+    padding: 40px;
+    background-color: #f0f8ff;
+}
+
+.projects-intro {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    line-height: 1.8;
+    font-size: 1.05em;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Project Cards */
+.project-card {
+    flex: 1 1 400px;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-card h2 {
+    color: #1565c0;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+}
+
+.project-card strong {
+    color: #0d47a1;
+}
+
+/* Header tagline */
+header .tagline {
+    font-style: italic;
+    color: #bbdefb;
+    margin-top: 8px;
+    font-size: 1.2em;
+}
+
+/* Footer inherits existing CSS */
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .projects-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+/* ================= SKILLS PAGE ================= */
+.skills-main {
+    padding: 40px;
+    background-color: #f0f8ff;
+}
+
+.skills-intro {
+    background-color:  #E6E6FA;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    line-height: 1.8;
+    font-size: 1.05em;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Skill Cards */
+.skill-card {
+    flex: 1 1 300px;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.skill-card h2 {
+    color: #1565c0;
+    margin-bottom: 12px;
+}
+
+.skill-card ul {
+    padding-left: 20px;
+}
+
+.skill-card li {
+    margin-bottom: 8px;
+}
+
+/* Header tagline */
+header .tagline {
+    font-style: italic;
+    color: #bbdefb;
+    margin-top: 8px;
+    font-size: 1.2em;
+}
+
+/* Footer inherits existing CSS */
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
